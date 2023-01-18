@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.logo {
+    width: 27%;
+    padding-right: 20px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 170px;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    height: 13%;
+    overflow: hidden;
+    /* background-color:#151515e4 !important; */
+}
+
+.nav-list {
+    width: 55%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+    z-index: 10;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-list li a:hover {
+    color: grey;
+}
+
+.right-nav {
+    width: 50%;
+    text-align: right;
+    padding-top: 28px;
+    padding-right: 30px;
+    /* background-color: blueviolet; */
+    /* overflow: hidden; */
+}
+
+#search {
+    padding: 3px;
+    font-size: 1rem;
+    border: 2px white solid;
+    border-radius: 4px;
+    background: none;
+    color: rgb(5, 168, 5);
+}
+.container {
+    background: rgba(0, 0, 0, 0.745) url(assets/education.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+    /* overflow: hidden; */
+
+}
+
+.box-main{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: white;
+    max-width: 60%;
+    margin: auto;
+    padding-top: 9.4%;
+}
+
+.first-half {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.second-half img {
+    /* background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8)); */
+    /* width: 20%; */
+    /* background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8)) !important; */
+    width: 45vh;
+    margin-left: 50px;
+    text-align: right;
+    border: 4px solid white;
+    border-radius: 100px;
+}
+
+.small-text {
+    text-align: justify, center;
+    padding-top: 10px;
+    font-size: 1.09rem;
+}
+
+.big-text {
+    color: rgb(12, 227, 230);
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.buttons {
+    padding-top: 15px;
+}
+
+.btn {
+    padding: 9px;
+    background: transparent;
+    border: 2px solid rgb(12, 227, 230);
+    color: rgb(12, 227, 230);
+}
+
+.btn-1 {
+    margin-right: 40px;
+}
+
+.sub {
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.sub:hover {
+    background-color: rgb(14, 179, 182);
+    color: white;
+}
+
+.btn-sm {
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid rgb(14, 179, 182);
+    color: rgb(14, 179, 182);
+    padding:4.8px;
+    margin-left: 5px;
+}
+
+/* #search-1 {
+    padding: 8px;
+    padding-inline-end: 60px;
+    border-radius: 30px;
+    width: 0;
+    background-image: url(assets/magnifying-glass-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    transition: 0.6s ease-in-out;
+    background-image: green;
+}
+#search-1:hover {
+    width: 250px;
+    background-position: 210px;
+    background-size: 20px;
+} */
+
+.c-1 {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    left: 0;
+    right: 10;
+    bottom: 0;
+    width: 2350px;
+    height: 100px;
+}
+
+.sea {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: rgb(14, 156, 158);
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.sea::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 22px;
+    right: 0;
+    bottom: 0;
+    left: 22px;
+    width: 9.5px;
+    height: 2px;
+    background: rgb(16, 243, 247);
+    transform: rotate(45deg);
+    transition: all .5s;
+}
+
+.sea::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: -5px;
+    right: 0;
+    bottom: 0;
+    left: -5px;
+    width: 19.6px;
+    height: 19.6px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all .5s;
+}
+
+.in {
+    font-family: 'Quicksand', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 44px;
+    height:44px;
+    outline: none;
+    border: none;
+    background: rgb(10, 183, 186);
+    color: white;
+    text-shadow: 0 0 10px rgb(9, 200, 203);
+    padding: 0 80px 0 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 25px 0 rgb(16, 243, 247),
+                0 20px 25px 0 rgba(0, 0, 0, 0.2);
+    transition: all 1s;
+    opacity: 0;
+    z-index: 5;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+}
+
+.in:hover {
+    cursor: pointer;
+}
+
+.in:focus {
+    width: 250px;
+    opacity: 1;
+    cursor: text;
+}
+
+.in:focus ~ .sea {
+    right: -250px;
+    background: #151515;
+    z-index: 6;
+}
+
+.in::before {
+    top: 0;
+    left: 0;
+    width: 25px;
+}
+
+.in::after {
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    border: none;
+    background: white;
+    border-radius: 0%;
+    transform: rotate(-45deg);
+}
+
+.in::placeholder {
+    color: white;
+    opacity: 0.5;
+    font-weight: bolder;
+}
+
+.subject {
+    display: flex;
+}
+
+.hi {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 65px;
+    padding-inline: 90px;
+    padding-bottom: 100px;
+}
+
+.hi-secRight img {
+    width: 355px;
+    /* height: 210px; */
+    /* position: 50000px; */
+    margin-top: 63px;
+    margin-left: 50px;
+    /* border: 4px solid rgb(195, 195, 195); */
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.hi-secLeft {
+    margin-inline: 90px;
+    margin-inline-start: 140px;
+    /* border: 4px solid grey;
+    border-radius: 30px; */
+    padding: 10px;
+}
+
+.subject {
+    padding-top: 65px;
+    padding-inline: 90px;
+    padding-bottom: 100px;
+    /* border: 4px solid grey; */
+}
+
+.secRight img {
+    width: 355px;
+    /* height: 210px; */
+    /* position: 50000px; */
+    margin-top: 63px;
+    margin-right: 50px;
+    /* border: 4px solid rgb(195, 195, 195); */
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.secLeft {
+    padding-inline: 90px;
+    margin-inline-end: 140px;
+    /* border: 4px solid grey;
+    border-radius: 30px; */
+    padding: 10px;
+}
+
+.secTag {
+    font-size: 2rem;
+    /* text-decoration:underline; */
+    text-align: center;
+    font-weight: bold;
+    color: rgb(2, 210, 217);
+}
+
+.secSubTag {
+    color: rgb(224, 223, 223);
+    text-align: justify;
+    padding-top: 25px;
+    letter-spacing: 1px;
+    /* align-items: center; */
+}
+
+hr {
+    height:8px;
+    background: rgb(79, 79, 79);
+    border: none;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.3s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.black {
+    background: black;
+    overflow: hidden;
+    
+}
+
+.fomer {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* text-align: center;
+    align-items: center; */
+    /* width: 340px; */
+    /* border: 4px solid green; */
+    /* box-shadow: 0px 0px 15px green; */
+    /* margin-left: 969px; */
+    /* background-color: tr; */
+    /* position: right; */
+}
+
+/* .former {
+    background-image: url(assets/love\ to\ learn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h2 {
+    color: white;
+}
+
+.co {
+    background-color: rgba(0, 0, 0, 0.364);
+    padding: 8px;
+    margin: 10px;
+    color: white;
+    border: none;
+} */
+
+/* .co::placeholder {
+    color: rgba(255, 255, 255, 0.626);
+    border: none;
+}
+
+.co:focus {
+    border: none;
+}
+
+#message {
+    min-height: 120px;
+} */
+
+.poster {
+    background: url(assets/love\ to\ learn.jpg) rgba(0, 0, 0, 0.56);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    height: 110vh;
+}
+
+.bulu {
+    display: flex;
+    min-height: 100vh;
+    padding-left: 500px;
+    overflow: hidden;
+}
+  
+  .fi {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .screen {
+    position: relative;
+    background: rgba(0, 0, 0, 0.561);
+    border-radius: 10px;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 9px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.476);
+    z-index: -1;
+  }
+  
+  .screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4e4e50af;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .screen-header-left {
+    margin-right: auto;
+  }
+  
+  .screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+  }
+  
+  .screen-header-button.close {
+    background: #ed1c6f;
+  }
+  
+  .screen-header-button.maximize {
+    background: #e8e925;
+  }
+  
+  .screen-header-button.minimize {
+    background: #74c54f;
+  }
+  
+  .screen-header-right {
+    display: flex;
+  }
+  
+  .screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #16969f;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: rgba(37, 187, 224, 0.67);
+  }
+  
+  /* .app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: rgb(235, 13, 13);
+  }
+   */
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+
+  .app-form-button {
+    font-weight: bold;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s;
+    font-weight: bold;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #1294ae;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    padding: 17px;
+  }
+  
+  .app-form-button:hover {
+    color: #0bb3c0;
+    font-weight: bold;
+  }
+  
+  /* .credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #ffa4bd;
+    font-size: 16px;
+    font-weight: normal;
+  } */
+  
+  /* .credits-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  } */
+  
+  /* .dribbble {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+  } */
+  
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+  } 
+
+.text-footer {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: rgb(33, 33, 33);
+    color: white;
+}  
